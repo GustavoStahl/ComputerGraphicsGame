@@ -9,7 +9,7 @@ Este é um jogo sério contruído em Unity como trabalho final para a matéria d
 
 - Clone o repositório.
   ```
-  git clone git@github.com:GustavoStahl/ComputerGraphicsGame.git
+  git clone git@github.com:GustavoStahl/ComputerGraphicsGame.git --recurse-submodules
   ```
 - Abra a aba de Projetos no UnityHub e selecione a opção "Adicionar". Em seguida, selecione o diretório onde o repositório foi baixado.
 
