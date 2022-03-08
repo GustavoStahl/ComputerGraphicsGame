@@ -35,7 +35,7 @@ public class EnemySpawn : MonoBehaviour
         while(counter < enemyCount)
         {   
             Instantiate(enemy, RandomNavmeshLocation(radiusOfSpawn), Quaternion.identity);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.1f);
             counter += 1;
         }
     }

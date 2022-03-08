@@ -61,6 +61,7 @@ public class EnemyAi : MonoBehaviour
 
         if (walkPointSet)
             agent.SetDestination(walkPoint);
+        Debug.Log(walkPoint.y);
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
@@ -78,6 +79,9 @@ public class EnemyAi : MonoBehaviour
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
+
+        if (walkPoint.y > 3f)
+            walkPointSet = false;
     }
 
     private void ChasePlayer()
